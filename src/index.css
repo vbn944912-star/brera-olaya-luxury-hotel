@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Montserrat", "Cairo", system-ui, sans-serif;
+  --font-arabic: "Cairo", "IBM Plex Sans Arabic", system-ui, sans-serif;
+
+  --color-royal-gold: #C9A86A;
+  --color-deep-charcoal: #111111;
+  --color-luxury-ivory: #F8F6F2;
+  --color-warm-sand: #D9C7A1;
+}
+
+@layer base {
+  body {
+    background-color: #F8F6F2;
+    color: #111111;
+    font-family: 'Cairo', 'IBM Plex Sans Arabic', 'Montserrat', sans-serif;
+  }
+}
+
+/* Custom scrollbar and stylish helpers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9A86A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D9C7A1;
+}
+
+/* Animation classes */
+@keyframes kenburns {
+  0% { transform: scale(1) translate(0, 0); }
+  50% { transform: scale(1.05) translate(-1%, -0.5%); }
+  100% { transform: scale(1) translate(0, 0); }
+}
+
+.animate-kenburns {
+  animation: kenburns 35s infinite ease-in-out;
+}

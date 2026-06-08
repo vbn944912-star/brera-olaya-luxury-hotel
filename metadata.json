@@ -1,0 +1,6 @@
+{
+  "name": "Brera Olaya",
+  "description": "A luxury hotel in the heart of Olaya, Riyadh, combining modern elegance with authentic Saudi hospitality.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
